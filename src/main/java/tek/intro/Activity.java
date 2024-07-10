@@ -7,7 +7,7 @@ public class Activity {
 
         ChromeDriver Driver = new ChromeDriver();
 
-        Driver.get("https://dev.insurace.tekschool-students.com");
+        Driver.get("https://dev.insurance.tekschool-students.com");
 
         Driver.manage().window().maximize();
 
@@ -15,6 +15,6 @@ public class Activity {
 
         System.out.println(title);
 
-        Driver.quit();
+       // Driver.quit();
     }
 }
