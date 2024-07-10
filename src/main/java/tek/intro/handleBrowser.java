@@ -2,15 +2,23 @@ package tek.intro;
 import org.openqa.selenium.chrome.ChromeDriver;
 import com.sun.tools.javac.Main;
 
+import java.sql.Driver;
+
 public class handleBrowser {
 
     public static void main(String[] args) {
 
-        ChromeDriver chrome =new ChromeDriver();
+        ChromeDriver chromeDriver =new ChromeDriver();
 
-        chrome. get("https://facebook.com");
+        chromeDriver. get("https://facebook.com");
 
-        chrome.quit();
+        chromeDriver.manage().window().maximize();
+
+        String title = chromeDriver.getTitle();
+
+        System.out.println(title);
+
+        //chromeDriver.quit();
 
     }
 }
